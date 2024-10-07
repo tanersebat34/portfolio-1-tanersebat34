@@ -134,7 +134,7 @@ body {
 }
 
 .tech-stack span {
-    background-color: #e0e0e0;
+    background-color: rgba(224, 224, 224, 0.20);
     color: #000000;
     padding: 5px 15px;
     border-radius: 5px;
