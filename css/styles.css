@@ -1,7 +1,6 @@
-
 @import url('https://fonts.cdnfonts.com/css/blacksword');
 
- /* Genel ayarlar */
+/* General settings */
 * {
     margin: 0;
     padding: 0;
@@ -16,85 +15,91 @@ body {
     margin: 0;
 }
 
-/* Header kısmı düzenlemesi */
+/* Header styling */
 .main-header {
-    text-align: center; /* Ortaya hizalama */
-    background-color: rgba(12, 37, 49, 1); /* Görseldeki koyu mavi arka plan */
-    padding: 60px 0; /* Üst ve alt boşluk */
+    text-align: center;
+    background-color: rgba(12, 37, 49, 1);
+    padding: 60px 0;
 }
 
-/* Büyük başlık (Taner Sebat) */
+/* Main title (Taner Sebat) */
 .main-header h1 {
-    font-family: 'Blacksword', cursive; /* El yazısı stilinde font */
-    font-size: 4.5rem; /* Görsele göre büyük başlık boyutu */
-    color: #ffffff; /* Beyaz renk */
-    margin-bottom: 5px; /* Başlığın altındaki boşluk azaltıldı */
-    line-height: 1; /* Satır yüksekliği sıkılaştırıldı */
+    font-family: 'Blacksword', cursive;
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    line-height: 1;
 }
 
-/* Alt başlık (Junior Front-End Developer) */
+/* Subtitle (Junior Front-End Developer) */
 .main-header h2 {
-    font-family: 'Roboto', sans-serif; /* Düz font */
-    font-size: 1.5rem; /* Alt başlık boyutu */
-    color: #b0bec5; /* Hafif gri renk */
-    letter-spacing: 1px; /* Hafif harf aralığı */
-    font-weight: 400; /* Hafif yazı kalınlığı */
-    margin-top: 0; /* Üst boşluk kaldırıldı */
+    font-family: 'blacksword', cursive;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 480px;
 }
 
-/* Tanıtım Bölümü (Yazı Sol, Profil Fotoğrafı Sağ) */
+/* Intro Section (Text on the left, Profile Picture on the right) */
 .intro {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto 50px auto; /* Ortaya hizalama ve alt boşluk */
-    padding: 0 20px; /* Yandan hafif boşluklar */
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
 }
 
 .profile-image {
-    flex: 0 0 300px; /* Profil fotoğrafı sabit genişlikte */
-    margin-left: 20px; /* Yazı ile aradaki boşluk */
+    flex: 0 0 300px;
+    margin-left: 20px;
 }
 
 .profile-image img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 5); /* Gölge efekti */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 5);
     object-fit: cover;
 }
 
 .intro-text {
-    flex: 1; /* Yazı kısmı genişlesin */
-    text-align: left; /* Sol tarafa hizalama */
+    flex: 1;
+    text-align: left;
     font-size: 1.2rem;
     line-height: 1.8;
     color: white;
     padding-top: 20px;
-    margin-right: 20px; /* Profil resmi ile aradaki boşluk */
-    max-width: 700px; /* Yazı genişliği */
+    margin-right: 20px;
+    max-width: 700px;
 }
 
-/* Proje Başlığı (Projects) için stil ve hizalama */
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .projects h3 {
-    text-align: left; /* Sola hizalama */
-    font-family: 'Blacksword', cursive; /* El yazısı stilinde font */
-    font-size: 4rem; /* Büyük başlık boyutu */
-    color: #ffffff; /* Beyaz renk */
-    margin-bottom: 40px; /* Başlığın altında boşluk */
-    margin-left: 20px; /* Sol tarafta boşluk */
+    text-align: left;
+    font-family: 'Blacksword', cursive;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-left: 40px;
     text-shadow: 10px 10px 25.6px rgba(0, 0, 0, 0.50);
 }
 
-/* Proje Kartları */
+/* Project Cards */
 .project-item {
     display: flex;
-    background-color: #2a3b47; /* Kart arka planı */
+    background-color: #2a3b47;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     gap: 20px;
 }
 
@@ -102,6 +107,7 @@ body {
     width: 350px;
     border-radius: 10px;
     object-fit: cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 5);
 }
 
 .project-info {
@@ -110,34 +116,36 @@ body {
 
 .project-info h4 {
     font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
     margin-bottom: 10px;
 }
 
 .project-info p {
-    color: #b0bec5;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 15px;
 }
 
-/* Teknoloji Etiketleri */
+/* Technology Tags */
 .tech-stack {
     display: inline-block;
-    margin-bottom: 10px; /* Başlıkla aradaki boşluk */
+    margin-bottom: 10px;
 }
 
 .tech-stack span {
-    background-color: #e0e0e0; /* Hafif gri arka plan */
-    color: #000000; /* Siyah yazı rengi */
+    background-color: #e0e0e0;
+    color: #000000;
     padding: 5px 15px;
-    border-radius: 5px; /* Hafif yuvarlatılmış köşe */
+    border-radius: 5px;
     font-size: 0.85rem;
     font-weight: normal;
-    text-transform: uppercase; /* Büyük harfler */
-    margin-right: 10px; /* Etiketler arası boşluk */
+    text-transform: uppercase;
+    margin-right: 10px;
     display: inline-block;
 }
 
-/* Proje Linkleri */
+/* Project Links */
 .project-links {
     margin-top: 15px;
 }
@@ -147,26 +155,39 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
-    border-radius: 30px; /* Oval buton görünümü */
+    border-radius: 30px;
     font-size: 1rem;
     display: inline-block;
     margin-right: 15px;
 }
 
-/* Sosyal Medya Linkleri */
+/* Social Media Links */
 .social-links {
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 30px;
+    background-color: rgba(217, 217, 217, 0.97);
 }
 
 .social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin: 0 10px;
 }
 
 .social-links img {
-    width: 40px;
-    height: 40px;
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s ease;
 }
+
+
 
 /* Footer */
 .main-footer {
@@ -187,8 +208,75 @@ body {
     color: #b0bec5;
 }
 
-/* Responsive Tasarım */
+/* Media Queries */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+    .main-header h1 {
+        font-size: 3.8rem;
+    }
+
+    .main-header h2 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+    }
+
+    .projects {
+        padding: 0 20px;
+    }
+
+    .projects h3 {
+        margin-left: 0;
+    }
+}
+
+/* For mobile devices (768px and below) */
 @media (max-width: 768px) {
+    .main-header {
+        padding: 40px 0;
+    }
+
+    .main-header h1 {
+        font-size: 3rem;
+    }
+
+    .main-header h2 {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text {
+        text-align: center;
+        margin-right: 0;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .profile-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
     .project-item {
         flex-direction: column;
         padding: 15px;
@@ -198,19 +286,53 @@ body {
         width: 100%;
     }
 
-    .main-header h1 {
-        font-size: 3.5rem;
-    }
-
-    .main-header h2 {
-        font-size: 1.8rem;
-    }
-
     .project-info h4 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .project-info p {
         font-size: 1rem;
+    }
+
+    .projects h3 {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+}
+
+/* For small mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .main-header {
+        padding: 30px 0;
+    }
+
+    .main-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .project-item img {
+        width: 100%;
+    }
+
+    .projects h3 {
+        font-size: 2.5rem;
+    }
+
+    .project-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
     }
 }
