@@ -39,8 +39,9 @@ How to Run the Portfolio Locally
 	git clone https://github.com/tanersebat34/portfolio-1-tanersebat34.git
 
 	2.	Navigate to the project directory:
- 
-  cd portfolio-1-tanerseb
+
+   	 3.	cd portfolio-1-tanersebat34
+
 
   3.	Open the index.html file in your browser to view the portfolio.
 
