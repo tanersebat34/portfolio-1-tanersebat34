@@ -61,4 +61,4 @@ Include screenshots for visual representation:
 
 
 	•	Project Pages: Screenshots of each project with descriptions.
- ![Uploading Ekran Resmi 2024-10-08 16.47.17.png…]()
+![Ekran Resmi 2024-10-08 16 47 17](https://github.com/user-attachments/assets/f4a0153a-630a-4cf4-9305-31d9b5a39052)
