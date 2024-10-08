@@ -77,6 +77,10 @@ body {
     max-width: 700px;
 }
 
+.intro-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .projects {
     max-width: 1200px;
     margin: 0 auto;
